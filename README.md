@@ -10,7 +10,7 @@ In order to contribute, you will have to fork this project and submit a PR.
 
 ### Directory structure
 
-Switches are organized in a hierarchical order: `[manufacturer]/[brand]/[switch-name-slug].ts` inside [[src/switches]].
+Switches are organized in a hierarchical order: `[manufacturer]/[brand]/[switch-name-slug].ts` inside [./src/switches].
 
 Before adding a new switch, make sure it does not yet exist.
 
