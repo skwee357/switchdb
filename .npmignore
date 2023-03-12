@@ -1,0 +1,7 @@
+.eslint*
+.prettier*
+tsconfig.json
+.github
+src
+.env
+release-it.json

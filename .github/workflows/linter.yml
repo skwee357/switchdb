@@ -1,23 +1,18 @@
----
 name: Lint Code Base
-
 on:
   push:
     branches-ignore: [master, main]
   pull_request:
     branches: [master, main]
-
 jobs:
   build:
     name: Lint Code Base
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-
       - name: Lint Code Base
         uses: github/super-linter@v4
         env:
@@ -26,3 +21,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TYPESCRIPT_DEFAULT_STYLE: prettier
           TYPESCRIPT_ES_CONFIG_FILE: .eslintrc.js
+      - name: Build
+        uses: actions/setup-node@v3
+      - run: yarn
+      - run: yarn build --noEmit
