@@ -28,7 +28,7 @@
         "build": "tsc",
         "lint": "eslint src",
         "prettier": "prettier src --check",
-        "release": "dotenv release-it"
+        "release": "npm run lint && npm run build && dotenv release-it"
     },
     "repository": {
         "type": "git",
