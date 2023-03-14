@@ -1,6 +1,6 @@
 .eslint*
 .prettier*
-tsconfig.json
+tsconfig.*
 .github
 src
 .env
