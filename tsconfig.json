@@ -8,7 +8,6 @@
         "strictNullChecks": true,
         "declaration": true,
         "strict": true,
-        "resolveJsonModule": true,
     },
     "include": [
         "src"
