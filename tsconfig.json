@@ -8,6 +8,8 @@
         "strictNullChecks": true,
         "declaration": true,
         "strict": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true
     },
     "include": [
         "src"
