@@ -7,11 +7,11 @@ import {
 import { Color, Force, Tolerance, Travel } from '../../../types';
 
 export default {
-    model: 'Baby Kangaroo',
+    model: 'Baby Kangaroo 2.0',
     profile: 'regular',
     stem: StemMX.Regular(Material.POM(Color.Opaque('#97D5A9'))),
     type: 'tactile',
-    lifetime: 60,
+    lifetime: 80,
     mount: '5pin',
     lighting: 'smd',
     volume: 'medium',
